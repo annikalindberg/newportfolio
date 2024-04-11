@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
+import Link from "next/link";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
@@ -13,11 +14,16 @@ export default function Projects() {
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>My projects</SectionHeading>
       <div>
-        {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
-        ))}
+{projectsData.map((project, index) => (
+  <React.Fragment key={index}>
+    {project.slug && (
+      <Link href={`/app/project/${project.slug}`}>
+        <a><Project {...project} /></a>
+      </Link>
+    )}
+    {!project.slug && <Project {...project} />}
+  </React.Fragment>
+))}
       </div>
     </section>
   );
