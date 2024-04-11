@@ -19,7 +19,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -63,11 +63,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Annika.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> lorem{" "}
-        <span className="font-bold">lorem</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">I'm Annika, a full-stack developer. </span> <br />I
+        {" "}
+        <span className="font-bold">code</span>. {" "}
+        <span className="font-bold">React and Next.js</span> <span className="italic">sites & apps</span>. I have over 15+ years of experience working with accessibility in various ways{" "}
+        <span className="underline"></span>.
       </motion.h1>
 
       <motion.div
@@ -80,7 +80,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-red-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-orange-950 active:scale-105 transition"
+          className="group bg-red-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-orange-950 active:scale-105 transition dark:bg-gradient-to-bl from-fuchsia-900 to-zinc-800  dark:text-stone-15 dark:hover:bg-red-950 dark:hover:text-white-50 cursor-pointer borderBlack"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -91,7 +91,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-red-50 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-red-50 hover:bg-red-100 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:hover:text-white-50 dark:hover:bg-zinc-700 dark:bg-gradient-to-br from-zinc-900 to-blue-900"
           href="/AnnikaLindberg-CV.pdf"
           download
         >
