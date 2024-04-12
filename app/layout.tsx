@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Header from "@/components/header";
 import "./globals.css";
 import { Nunito } from "next/font/google";
@@ -26,6 +27,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+      <>
+{/*       <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" href="/favicon.ico" />
+        <style jsx global>{`
+          body {
+            font-family: ${nunito.className};
+          }
+        `}</style>
+      </Head> */}
     <html lang="en" className="!scroll-smooth">
       <body
         className={`${nunito.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-gray-50 dark:text-opacity-90`}
@@ -45,5 +61,6 @@ export default function RootLayout({
         </ThemeContextProvider>
       </body>
     </html>
+    </>
   );
 }

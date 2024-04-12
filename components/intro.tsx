@@ -32,7 +32,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/images/annika-profile.jpg"
+              src="/images/annika.png"
               alt="Annika portrait"
              width={100}
               height={100}
