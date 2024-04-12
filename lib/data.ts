@@ -38,9 +38,9 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Self-taught developer",
+    title: "Self Studies in Web Development",
     location: "Udemy, freeCodeCamp, Codecademy, all over the internet",
-    description: "I started learning web development in 2020. I've taken courses on Udemy, freeCodeCamp, and Codecademy. But most of my learning has been through building projects and reading documentation.",
+    description: "I started learning web development in 2020. During my parental leave, this was what I did when I got a moment for myself. I took Udemy courses, went freeCodeCamp and Codecademy with a sleeping baby on my cheast I wrote algorithms in Javascript. But most of my learning has been through building projects and reading documentation.",
     icon: React.createElement(FaReact),
     date: "2020 - 2022",
   },

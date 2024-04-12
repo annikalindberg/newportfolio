@@ -34,26 +34,26 @@ export default function Intro() {
             <Image
               src="/images/annika.png"
               alt="Annika portrait"
-             width={100}
-              height={100}
+             width={200}
+              height={200}
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.25rem] border-white shadow-xl mb-3"
+              className="h-50 w-50 rounded-lg object-cover  shadow-xl mb-3"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 left-0 text-4xl"
+            className="absolute bottom-0 left-0 text-5xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
-              stiffness: 125,
+              stiffness: 125, 
               delay: 0.1,
               duration: 0.7,
             }}
           >
-            👩‍💻
+           <hr className="w-40 h-2 rounded-md bg-gradient-to-r from-fuchsia-900 to-pink-600" />
           </motion.span>
         </div>
       </div>
