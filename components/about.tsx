@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -24,10 +23,10 @@ export default function About() {
 <hr className="w-10 h-1 mx-auto my-8  bg-pink-600 border-0 rounded md:my-9 dark:bg-cyan-400" />
  <div> <p>My background in education and accessibility compliance, has provided me with a deep understanding for web accessibility as a developer. I keep investing in my interest and earned several certificates within web accessibility standards and UX-design. In my freelance developer toolkit I provide accessibility audits as well as hands-on tips in how to improve code and UX/UI to be compliant to WCAG and WAI-ARIA standards. 
       </p></div>
-      <h2 className="text-3xl mt-4 font-bold text-left  text-pink-800">Freelancing developer </h2>
+      <h2 className="text-3xl mt-4 font-bold text-left dark:text-pink-500 text-pink-800">Freelancing developer </h2>
       <hr className="w-10 h-1 mx-auto my-8  bg-pink-600 border-0 rounded md:my-9 dark:bg-cyan-400" />
 
-      <h2 className="text-3xl mt-4 font-bold mb-3 text-right text-cyan-800">FemTech inspiration </h2>
+      <h2 className="text-3xl mt-4 font-bold mb-3 text-right mr-5 text-cyan-800 dark:text-cyan-500">FemTech inspiration </h2>
      
 
          <div className="mt-4 mb-4"> As a freelancing developer, based in Stockholm, Sweden, I build customized and hand-crafted applications and offer accessibility audits for small to middle size organizations and businesses webpages. Im also a professional <div className="text-2xl text-grey-400 font-bold mb-2 text-center"> BIRTH DOULA</div>, and seek all the opportunity's to combine my two passions in life. At DAYA Innovation Lab, a FemTech incubator, I am currently living that dream. Its amazing getting to be in the hub where innovation and technology really can make life better for so many people. I get amazed by the power of technology and the impact it can have on the world.

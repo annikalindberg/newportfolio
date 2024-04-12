@@ -38,7 +38,7 @@ export default function Intro() {
               height={200}
               quality="95"
               priority={true}
-              className="h-50 w-50 rounded-lg object-cover  shadow-xl mb-3"
+              className="h-200 w-200 rounded-full object-cover  shadow-xl mb-3"
             />
           </motion.div>
 
@@ -53,7 +53,6 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-           <hr className="w-40 h-2 rounded-md bg-gradient-to-r from-fuchsia-900 to-pink-600" />
           </motion.span>
         </div>
       </div>
