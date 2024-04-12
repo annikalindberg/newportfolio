@@ -17,16 +17,19 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading> </SectionHeading>
-      <h2 className="text-3xl font-bold mb-3">Frontend to Fullstack</h2>
+      <h2 className="text-3xl font-bold mb-3 text-center">Frontend to Fullstack</h2>
       <p className="font-medium ">
        In 2020, I transitionend from a career as a
       executive coordinator into web development, and I havent looked back since. 2023 I decided to enroll Technigo bootcamp and leverage my skills into the leading technologies on the market. After graduation I started building on my portfolio, my tech stack and my passion for code. </p>
-        <div className="mt-4 mb-4"><p> Currently I am self employed at <span className="italic">NextEdit Tech Solutions,</span> my freelance business where I build accessible and beautiful designs and hand-coded websites for small businesses and startups. </p>
+<hr className="w-10 h-1 mx-auto my-8  bg-pink-600 border-0 rounded md:my-9 dark:bg-cyan-400" />
+
+        <div className="mt-4 mb-4"><p> Currently I am self employed at <span className="italic">NextEdit Tech Solutions,</span> my freelance business where I build customized and hand-crafted applications and offer accessibility audits for small to middle size organizations and businesses webpages. </p>
         </div>
-        <div className="ml-10 mt-8 mb-8"> <p className="italic font-bold">My background in education and accessibility compliance, has provided me with a deep understanding for web accessibility as a developer. I keep investing in my interest and earned several certificates within
-        web accessibility standards and UX-design. In my freelance developer toolkit I provide accessibility audits as well as hands-on tips in how to improve code and UX/UI to be compliant to WCAG and WAI-ARIA standards. 
+        
+        <div> <p>My background in education and accessibility compliance, has provided me with a deep understanding for web accessibility as a developer. I keep investing in my interest and earned several certificates within web accessibility standards and UX-design. In my freelance developer toolkit I provide accessibility audits as well as hands-on tips in how to improve code and UX/UI to be compliant to WCAG and WAI-ARIA standards. 
       </p></div>
+      <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
+
       <div className="mt-4 mb-4">
   
         <p> 

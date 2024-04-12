@@ -9,7 +9,6 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { Button } from "@react-email/components";
 
 
 export default function Intro() {
@@ -20,7 +19,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[45rem] sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -39,7 +38,7 @@ export default function Intro() {
               height={100}
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.25rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.25rem] border-white shadow-xl mb-3"
             />
           </motion.div>
 
@@ -60,15 +59,13 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-9 px-4 text-2xl text-center font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">I'm Annika, a full-stack developer. </span> <br />I
-        {" "}
-        <span className="font-bold">code</span>. {" "}
-        <span className="font-bold">React and Next.js</span> <span className="italic">sites & apps</span>. I have over 15+ years of experience working with accessibility in various ways{" "}
-        <span className="underline"></span>.
+        <div className="font-bold text-violet-800 dark:text-pink-50 mb-8">I'm Annika, a Full-Stack developer. </div> 
+       <div className=" text-teal-900 dark:text-teal-50 mb-20">I have over 15+ years of experience working with accessibility in various ways.</div>{" "} 
+      
       </motion.h1>
 
       <motion.div
@@ -81,7 +78,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gradient-to-bl from-fuchsia-900 to-pink-600  text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-orange-900 active:scale-105 transition dark:bg-gradient-to-bl from-fuchsia-900 to-zinc-800  dark:text-stone-100 dark:hover:bg-red-900 cursor-pointer borderBlack"
+          className="group bg-gradient-to-bl from-fuchsia-900 to-pink-600  text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-orange-900 active:scale-105 transition dark:text-stone-100 dark:hover:bg-red-900 cursor-pointer borderBlack"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -91,7 +88,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-5 transition" />
         </Link>
         <a
-          className="group bg-red-50 hover:bg-red-100 px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:hover:text-white-50 dark:hover:bg-zinc-700 dark:bg-gradient-to-br from-zinc-900 to-blue-900"
+          className="group bg-red-50 hover:bg-red-100 px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:hover:text-white-50 dark:hover:bg-zinc-700 dark:bg-gradient-to-br from-zinc-900 to-cyan-900"
           href="/AnnikaLindberg-CV.pdf"
           download="AnnikaLindberg-CV.pdf"
         >
