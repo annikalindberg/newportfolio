@@ -18,12 +18,20 @@ export default function About() {
       id="about"
     >
       <SectionHeading> </SectionHeading>
-      <p className="mb-3">
-       In 2020, I transitionend from a career as a {" "}
-        <span className="font-medium">executive coordinator</span>{" "} into web development, and I havent looked back since. 2023 I decided to enroll Technigo bootcamp and leverage my skills into the leading technologies on the market. After graduation I started building on my portfolio, my tech stack and my passion for code. {" "} <br /> I have my freelance business "NextEdit Tech Solutions", focusing on building accessible and beautiful designs and handcoded websites for small businesses and startups. My background in education and accessibility compliance, has provided me with a deep understanding for web accessibility as a developer. I keep investing in my interest and earned several certificates within{" "} <span className="font-medium">web accessibility standards</span>{" "} and{" "} <span className="font-medium">UX-design</span>{" "}. In my freelance developer toolkit I provide accessibility audits as well as hands-on tips in how to improve code and UX/UI to be compliant to WCAG and WAI-ARIA standards. 
-      </p> <p> 
-        React, Next.js, Node.js, and MongoDB is where I find myself most of the times. TypeScript/JavaScript is my first coding language. 
-        TypeScript/JavaScript is my first coding language. React and Next.js is where I find myself most of the times. Values I always bring to my practice is to make the code accessible for <span className="fint-medium">everyone</span>. I love combining my intrest in the latest design trends, keep playfulness and innovative edge yet making sure the design is accessible for anyone to use.</p> 
+      <h2 className="text-3xl font-bold mb-3">Frontend to Fullstack</h2>
+      <p className="font-medium ">
+       In 2020, I transitionend from a career as a
+      executive coordinator into web development, and I havent looked back since. 2023 I decided to enroll Technigo bootcamp and leverage my skills into the leading technologies on the market. After graduation I started building on my portfolio, my tech stack and my passion for code. </p>
+        <div className="mt-4 mb-4"><p> Currently I am self employed at <span className="italic">NextEdit Tech Solutions,</span> my freelance business where I build accessible and beautiful designs and hand-coded websites for small businesses and startups. </p>
+        </div>
+        <div className="ml-10 mt-8 mb-8"> <p className="italic font-bold">My background in education and accessibility compliance, has provided me with a deep understanding for web accessibility as a developer. I keep investing in my interest and earned several certificates within
+        web accessibility standards and UX-design. In my freelance developer toolkit I provide accessibility audits as well as hands-on tips in how to improve code and UX/UI to be compliant to WCAG and WAI-ARIA standards. 
+      </p></div>
+      <div className="mt-4 mb-4">
+  
+        <p> 
+        React, Next.js, Node.js, and MongoDB is where I find myself most of the times. 
+        TypeScript/JavaScript is my first coding language, React and Next.js is where I find myself most of the times. I naturally expand my tech stack based on the specific problems I need to solve with my code. My primary focus is always on the end user and the future maintainers of the code. I honour <span className="font-bold">best practices</span> to ensure a positive experience for both developers and end user. I love combining my interest in the latest design trends, keep playfulness and innovative edge yet making sure the design is accessible for anyone to use.</p> </div>
      
       
     </motion.section>

@@ -7,7 +7,13 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 
-const nunito = Nunito({ subsets: ["latin"] }); 
+const nunito = Nunito({ 
+  subsets: ["latin"],
+  weight: ['300','400', '600', '800'],
+
+
+
+ }); 
 
 export const metadata = {
   title: "Annika | Personal Portfolio",
