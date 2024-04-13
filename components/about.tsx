@@ -29,7 +29,8 @@ export default function About() {
       <h2 className="text-3xl mt-4 font-bold mb-3 text-right mr-5 text-cyan-800 dark:text-cyan-500">FemTech inspiration </h2>
      
 
-         <div className="mt-4 mb-4"> As a freelancing developer, based in Stockholm, Sweden, I build customized and hand-crafted applications and offer accessibility audits for small to middle size organizations and businesses webpages. Im also a professional <div className="text-2xl text-grey-400 font-bold mb-2 text-center"> BIRTH DOULA</div>, and seek all the opportunity's to combine my two passions in life. At DAYA Innovation Lab, a FemTech incubator, I am currently living that dream. Its amazing getting to be in the hub where innovation and technology really can make life better for so many people. I get amazed by the power of technology and the impact it can have on the world.
+         <div className="mt-4 mb-4"> As a freelancing developer, based in Stockholm, Sweden, I build customized and hand-crafted applications and offer accessibility audits for small to middle size organizations and businesses webpages. 
+         <h2 className="text-2xl mt-5 dark:text-pink-500 text-pink-800 mb-2">BTW Im also a professional BIRTH DOULA</h2> Why I seek all the opportunity's to combine my two passions in life <span aria-hidden> 💕</span> At DAYA Innovation Lab, a FemTech incubator, I am currently living that dream. Its amazing getting to be in the hub where innovation and technology really can make life better for so many people. I get amazed by the power of technology and the impact it can have on the world.
         </div>
       <hr className="w-10 h-1 mx-auto my-8 bg-cyan-600 border-0 rounded md:my-12 dark:bg-pink-500" />
 
