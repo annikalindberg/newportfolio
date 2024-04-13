@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Header from "@/components/header";
 import "./globals.css";
 import { Nunito } from "next/font/google";
@@ -7,6 +6,8 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import Head from "next/head";
+import { metadata } from "@/lib/site-metadata";
 
 const nunito = Nunito({ 
   subsets: ["latin"],
@@ -16,10 +17,7 @@ const nunito = Nunito({
 
  }); 
 
-export const metadata = {
-  title: "Annika | Personal Portfolio",
-  description: "Annika is a full-stack developer, accessibility enthusiast, and a solutions architect.",
-};
+
 
 export default function RootLayout({
   children,
@@ -28,20 +26,21 @@ export default function RootLayout({
 }) {
   return (
       <>
-{/*       <Head>
+      <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content={metadata.url} />
+        <meta property="og:image" content={metadata.image} />
+        <meta name="twitter:title" content={metadata.title} />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta name="twitter:image" content={metadata.image} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
-        <style jsx global>{`
-          body {
-            font-family: ${nunito.className};
-          }
-        `}</style>
-      </Head> */}
+     
+      </Head> 
     <html lang="en" className="!scroll-smooth">
       <body
         className={`${nunito.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-gray-50 dark:text-opacity-90`}
