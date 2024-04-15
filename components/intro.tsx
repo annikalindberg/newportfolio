@@ -62,7 +62,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <div className="font-bold text-fuchsia-950 dark:text-pink-50 mb-8">I'm Annika, a developer with people skills.</div> 
+        <div className="font-bold text-fuchsia-950 dark:text-pink-50 mb-8">I'm Annika, a Developer with People Skills and Passion for Code</div> 
        <div className=" text-teal-900 dark:text-teal-50 mb-20">I have over 15+ years of experience working with accessibility in various ways.</div>{" "} 
       
       </motion.h1>
