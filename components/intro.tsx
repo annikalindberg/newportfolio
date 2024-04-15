@@ -34,11 +34,11 @@ export default function Intro() {
             <Image
               src="/images/annika.png"
               alt="Annika portrait"
-             width={200}
-              height={200}
+             width={384}
+              height={384}
               quality="100" 
               priority={true}
-              className="h-200 w-200 rounded-full object-cover  shadow-xl mb-3"
+  className="h-24 w-24 sm:h-48 sm:w-48 rounded-xl object-cover border-[0.rem] sm:border-[0.2rem] border-gray-300 shadow-xl mb-3"
             />
           </motion.div>
 
@@ -62,7 +62,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <div className="font-bold text-violet-800 dark:text-pink-50 mb-8">I'm Annika, a developer with people skills.</div> 
+        <div className="font-bold text-fuchsia-950 dark:text-pink-50 mb-8">I'm Annika, a developer with people skills.</div> 
        <div className=" text-teal-900 dark:text-teal-50 mb-20">I have over 15+ years of experience working with accessibility in various ways.</div>{" "} 
       
       </motion.h1>
