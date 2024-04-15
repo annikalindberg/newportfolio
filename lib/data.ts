@@ -53,10 +53,10 @@ export const experiencesData = [
     date: "2023",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Full Stack Developer",
     location: "Stockholm, Sweden",
     description:
-      "Freelance full-stack developer working on various projects. My stack includes React, Next.js, TypeScript, Tailwind, Sanity and MongoDB.",
+      "Freelance full stack developer working on various projects. My stack includes React, Next.js, TypeScript, Tailwind, Sanity and MongoDB.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
@@ -137,7 +137,7 @@ export const projectsData = [
     },
     {
         title: "Happy-Thoughts-Project",
-        description: "A microblogging platform for sharing joyful moments, supported by a custom Express API and MongoDB for the backend. Incorporates full-stack development with React on the frontend.",
+        description: "A microblogging platform for sharing joyful moments, supported by a custom Express API and MongoDB for the backend. Incorporates full stack development with React on the frontend.",
         imageUrl: "/images/happythoughts.png",
         tags: ["Express", "Mongo DB", "CSS", "JavaScript", "React", "API", "Axios", "Fullstack", "Node.js"],
         githubLink: "https://github.com/annikalindberg/project-happy-thoughts",

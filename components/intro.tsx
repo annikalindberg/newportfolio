@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-
+import { FaRegFilePdf } from "react-icons/fa";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -88,11 +88,13 @@ export default function Intro() {
         </Link>
         <a
           className="group bg-red-50 hover:bg-red-100 px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:hover:text-white-50 dark:hover:bg-zinc-700 dark:bg-gradient-to-br from-zinc-900 to-cyan-900"
-          href="/AnnikaLindberg-CV.pdf"
+          href="/AnnikaLindberg-CV1.2.pdf"
           download="AnnikaLindberg-CV.pdf"
+          aria-label="Download Annikas CV - opens in new tab"
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y- transition" />
+          <HiDownload  className="opacity-60 group-hover:translate-y- transition" />
+<FaRegFilePdf />
         </a>
         <Link 
    

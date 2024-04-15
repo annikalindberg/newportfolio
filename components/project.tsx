@@ -34,7 +34,7 @@ export default function Project({
     if (link) {
       return <a href={link} target="_blank" rel="noopener noreferrer">Live Demo</a>;
     }
-    return "Links will be available soon!";
+    return "Links to this project will be available soon!";
   };
   return (
     <motion.div
