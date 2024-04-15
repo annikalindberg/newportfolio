@@ -17,6 +17,7 @@ const metadata = {
     image: "/images/og-portfolio.png",
     url: "https:www.annikalindberg-ts.com",
     type: "website",
+    
 };
 
 
