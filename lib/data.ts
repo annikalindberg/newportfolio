@@ -80,6 +80,16 @@ export const experiencesData = [
 ] as const; 
 
 export const projectsData = [
+  {
+    title: "Company Web Page for MedMod AB",
+    description: "MedMod is a consultant company in enterprise architecture, data science, informatics, and terminology. The requirements were simply to create a static MPA build it vanilla HTML5, CSS3 and minimal JavaScript. I enjoyed the challenge returning to the foundational craftspersonship of coding, focusing on creating a lightweight, accessible website with minimal client-side rendering. The project underscored the essence of simplicity, clean code, and optimizing for both performance and accessibility.",
+    imageUrl: "/images/medmod.png",
+    imageCaption: "",
+    tags: ["HTML5", "CSS3", "JavaScript", "Vanilla", "MPA", "SEO", "WCAG", "WAI-ARIA"],
+    githubLink: "",
+    LiveDemoLink: "",
+
+  },
     {
         title: "teQueenMatch",
         slug: "projects/[slug]",

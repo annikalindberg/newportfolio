@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
+import { link } from "fs";
 
 
 type ProjectProps = (typeof projectsData)[number];
@@ -24,9 +25,17 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+
+
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-
+  
+  const renderLiveDemoLink = (link: string | undefined) => {
+    if (link) {
+      return <a href={link} target="_blank" rel="noopener noreferrer">Live Demo</a>;
+    }
+    return "Links will be available soon!";
+  };
   return (
     <motion.div
       ref={ref}
@@ -75,17 +84,21 @@ export default function Project({
         />
       </section>
       <div className="flex flex-col justify-center items-center space-y-6 mt-4 sm:mt-0 ml-9">
-        {LiveDemoLink && (
-          <a
-            href={LiveDemoLink}
-            target="_blank"
-            rel="noopener noreferrer"
-                    aria-label={`Live demo of ${title}`}
+  {LiveDemoLink ? (
+    <a
+      href={LiveDemoLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Live demo of ${title}`}
+      className="flex items-center justify-end gap-2 text-right text-indigo-900 dark:text-white hover:underline hover:translate-y-2 transition"
+    >
+      <HiOutlineExternalLink aria-hidden="true" className="opacity-70" />
+      Demo <BsArrowRight aria-hidden="true" className="opacity-70 ml-10" />
+    </a>
+  ) : (
+  <p>{renderLiveDemoLink(LiveDemoLink)}</p>
+   
 
-  className="flex items-center justify-end gap-2 text-right text-indigo-900 dark:text-white hover:underline hover:translate-y-2 transition"
-          > <HiOutlineExternalLink aria-hidden="true" className="opacity-70" />
-            Demo <BsArrowRight aria-hidden="true" className="opacity-70 ml-10" />
-          </a>
         )}
         {githubLink && (
           <a
