@@ -34,7 +34,7 @@ export default function Contact() {
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:annika.edit.lindberg&#64;gmail&#46;com">
-    mailto:annika.edit.lindberg&#64;gmail&#46;com
+    annika.edit.lindberg&#64;gmail&#46;com
         </a>{" "}
         or through this form.
       </p>
@@ -52,7 +52,7 @@ export default function Contact() {
           toast.success("Email sent successfully!");
         }}
       >
-                <label htmlFor="senderEmail" className="dark:text-white">
+                <label htmlFor="senderEmail" className="dark:text-white mb-1 mt-2 text-left">
           Your Email:
         </label>
         <input
@@ -65,7 +65,7 @@ export default function Contact() {
           maxLength={500}
           placeholder="Enter your email here"
         />
-               <label htmlFor="message" className="dark:text-white">
+               <label htmlFor="message" className="dark:text-white mt-3 text-left">
           Your Message:
         </label>
         <textarea
