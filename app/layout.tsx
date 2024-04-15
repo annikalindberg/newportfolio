@@ -29,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
       <>
- <Head>
+ 
+    <html lang="en" className="!scroll-smooth">
+      <metadata>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.title} />
@@ -39,8 +41,7 @@ export default function RootLayout({
         <meta property="og:image" content={metadata.image} />
         <link rel="icon" href="/favicon.ico" />
      
-      </Head> 
-    <html lang="en" className="!scroll-smooth">
+      </metadata> 
       <body
         className={`${nunito.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-slate-900 dark:text-gray-50 dark:text-opacity-90`}
       >     
