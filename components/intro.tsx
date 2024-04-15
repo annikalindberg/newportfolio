@@ -36,7 +36,7 @@ export default function Intro() {
               alt="Annika portrait"
              width={200}
               height={200}
-              quality="95"
+              quality="100" 
               priority={true}
               className="h-200 w-200 rounded-full object-cover  shadow-xl mb-3"
             />

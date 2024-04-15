@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://yourdomain.com',
+  siteUrl: 'https://www.annikalindberg-ts.com/',
   generateRobotsTxt: true, // Generate robots.txt
   sitemapSize: 7000,
 };
