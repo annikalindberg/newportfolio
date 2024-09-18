@@ -73,6 +73,14 @@ export const experiencesData = [
     icon: React.createElement(RiOpenSourceLine),
     date: '2023 - present',
   },
+  {
+    title: 'Educator in Frontend Development and UX Design',
+    location: 'ZoCom AB',
+    description:
+      'Since the summer of 2024, I’ve had the great honor of teaching JavaScript, TypeScript, and React in the IT professional program. This fall, I’ve also taken on the role of lead instructor in advanced UX design at Chas Academy.',
+    icon: React.createElement(LuGraduationCap),
+    date: '2024 - present',
+  },
 ] as const;
 
 export const projectsData = [
