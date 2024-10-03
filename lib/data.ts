@@ -69,7 +69,7 @@ export const experiencesData = [
     title: 'Volonteer Developer',
     location: 'Zetkin Foundation',
     description:
-      'Open source project for political activism. I work on the frontend with React and TypeScript.',
+      'Open source contributer at Zetkin Foundation, a communication and event platform helping organizations facilitate activities.',
     icon: React.createElement(RiOpenSourceLine),
     date: '2023 - present',
   },
@@ -77,7 +77,7 @@ export const experiencesData = [
     title: 'Educator in Frontend Development and UX Design',
     location: 'ZoCom AB',
     description:
-      'Since the summer of 2024, I’ve had the great honor of teaching JavaScript, TypeScript, and React in the IT professional program. This fall, I’ve also taken on the role of lead instructor in advanced UX design at Chas Academy.',
+      'As a consultant, I’ve had the great honor of teaching JavaScript, TypeScript, and React at the Lexicon IT professional program. This fall, I’ve also taken on the role of lead instructor in advanced UX design for the -23 Frontend/UX-class at Chas Academy.',
     icon: React.createElement(LuGraduationCap),
     date: '2024 - present',
   },
